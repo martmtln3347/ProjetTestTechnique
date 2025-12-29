@@ -14,10 +14,6 @@ export function App() {
       <main className={styles.main}>
         <AddressSearchPage />
       </main>
-
-      <footer className={styles.footer}>
-        <span>React + Vite + JavaScript</span>
-      </footer>
     </div>
   );
 }
