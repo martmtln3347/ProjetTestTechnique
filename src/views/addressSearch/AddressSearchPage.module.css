@@ -1,0 +1,8 @@
+.section {
+  display: grid;
+  gap: 14px;
+}
+
+.results {
+  min-height: 120px;
+}
