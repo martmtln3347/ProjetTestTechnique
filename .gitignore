@@ -31,3 +31,7 @@ coverage/
 
 # Misc
 *.local
+
+# Local debug artifacts
+response.json
+
