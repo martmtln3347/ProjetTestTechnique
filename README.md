@@ -31,23 +31,8 @@ npm run dev
 - Endpoint : `https://api-adresse.data.gouv.fr/search/?q=...`
 - Docs : https://www.data.gouv.fr/dataservices/api-adresse-base-adresse-nationale-ban
 
-## Déployer sur Vercel
-Ce projet est une app React + Vite "statique" : Vercel lance un build puis sert le dossier `dist/`.
-
-### Option A — via l'interface Vercel (recommandé)
-1. Push le repo sur GitHub/GitLab.
-2. Sur Vercel: **New Project** → importe le repo.
-3. Vérifie les settings:
-	- **Build Command**: `npm run build`
-	- **Output Directory**: `dist`
-4. Deploy.
-
-### Option B — via la CLI Vercel
-1. Dans le dossier du projet:
-	- `npx vercel`
-2. La CLI te demande de te connecter et de lier le projet.
-3. Pour déployer en production ensuite:
-	- `npx vercel --prod`
-
-Note: un fichier `vercel.json` est déjà présent pour fixer `buildCommand` / `outputDirectory`.
+## À propos du “score”
+Le champ “score” affiché dans la liste correspond à `properties.score` renvoyé par l’API BAN pour chaque résultat.
+Il s’agit d’un indicateur de pertinence/confiance du matching entre ta requête (`q`) et l’adresse retournée : plus il est élevé, plus le résultat est jugé pertinent.
+(En pratique, c’est généralement une valeur entre 0 et 1, affichée ici avec 2 décimales.)
 
